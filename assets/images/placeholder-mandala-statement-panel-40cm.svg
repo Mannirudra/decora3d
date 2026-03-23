@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#111111"/>
+      <stop offset="100%" style="stop-color:#1e1a0e"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9A7C2A"/>
+      <stop offset="50%" style="stop-color:#E8D5A0"/>
+      <stop offset="100%" style="stop-color:#9A7C2A"/>
+    </linearGradient>
+    <linearGradient id="goldv" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#C8A84B"/>
+      <stop offset="100%" style="stop-color:#9A7C2A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bg)"/>
+
+  <!-- Outer border -->
+  <rect x="12" y="12" width="776" height="776" fill="none" stroke="url(#gold)" stroke-width="1.5" opacity="0.6"/>
+  <!-- Inner border -->
+  <rect x="24" y="24" width="752" height="752" fill="none" stroke="url(#gold)" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Diagonal grid lines (subtle) -->
+  <line x1="0" y1="400" x2="800" y2="400" stroke="#C8A84B" stroke-width="0.3" opacity="0.08"/>
+  <line x1="400" y1="0" x2="400" y2="800" stroke="#C8A84B" stroke-width="0.3" opacity="0.08"/>
+  <line x1="0" y1="0" x2="800" y2="800" stroke="#C8A84B" stroke-width="0.3" opacity="0.05"/>
+  <line x1="800" y1="0" x2="0" y2="800" stroke="#C8A84B" stroke-width="0.3" opacity="0.05"/>
+
+  <!-- Corner accents -->
+  <polyline points="40,40 40,80 80,80" fill="none" stroke="#C8A84B" stroke-width="2"/>
+  <polyline points="760,40 760,80 720,80" fill="none" stroke="#C8A84B" stroke-width="2"/>
+  <polyline points="40,760 40,720 80,720" fill="none" stroke="#C8A84B" stroke-width="2"/>
+  <polyline points="760,760 760,720 720,720" fill="none" stroke="#C8A84B" stroke-width="2"/>
+
+  <!-- Top label pill -->
+  <rect x="290" y="70" width="220" height="32" rx="16" fill="#C8A84B" opacity="0.15"/>
+  <rect x="290" y="70" width="220" height="32" rx="16" fill="none" stroke="#C8A84B" stroke-width="1" opacity="0.5"/>
+  <text x="400" y="91" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#C8A84B" letter-spacing="3">WALL ART</text>
+
+  <!-- Category icon -->
+  <text x="400" y="168" text-anchor="middle" font-size="60">🖼</text>
+
+  <!-- Gold divider above title -->
+  <rect x="160" y="182" width="480" height="1" fill="url(#gold)" opacity="0.4"/>
+
+  <!-- Product title -->
+  <text x="400" y="182" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="28" font-weight="900" fill="#E8D5A0" letter-spacing="2">MANDALA STATEMENT</text>
+  <text x="400" y="218" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="28" font-weight="900" fill="#E8D5A0" letter-spacing="2">PANEL — 40CM</text>
+
+  <!-- Gold divider below title -->
+  <rect x="160" y="250" width="480" height="1" fill="url(#gold)" opacity="0.4"/>
+
+  <!-- Material badge -->
+  <rect x="316" y="268" width="168" height="28" rx="4" fill="#C8A84B" opacity="0.12"/>
+  <text x="400" y="287" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#C8A84B" letter-spacing="2">PLA+</text>
+
+  <!-- Price -->
+  <text x="400" y="540" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="48" font-weight="900" fill="url(#goldv)">₹2,299</text>
+
+  <!-- "PHOTOGRAPH COMING SOON" watermark -->
+  <text x="400" y="600" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#444" letter-spacing="3">PRODUCT PHOTOGRAPH COMING SOON</text>
+
+  <!-- Decorative hex grid bottom -->
+  <g opacity="0.07">
+    <polygon points="400,640 424,653 424,680 400,693 376,680 376,653" fill="none" stroke="#C8A84B" stroke-width="1"/>
+    <polygon points="448,640 472,653 472,680 448,693 424,680 424,653" fill="none" stroke="#C8A84B" stroke-width="1"/>
+    <polygon points="352,640 376,653 376,680 352,693 328,680 328,653" fill="none" stroke="#C8A84B" stroke-width="1"/>
+    <polygon points="400,693 424,706 424,733 400,746 376,733 376,706" fill="none" stroke="#C8A84B" stroke-width="1"/>
+    <polygon points="448,693 472,706 472,733 448,746 424,733 424,706" fill="none" stroke="#C8A84B" stroke-width="1"/>
+    <polygon points="352,693 376,706 376,733 352,746 328,733 328,706" fill="none" stroke="#C8A84B" stroke-width="1"/>
+  </g>
+
+  <!-- Decora3D branding bottom -->
+  <text x="400" y="752" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="16" font-weight="900" fill="#C8A84B" letter-spacing="6">DECORA3D</text>
+  <text x="400" y="772" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#444" letter-spacing="3">www.decora3d.in  ·  DELHI NCR</text>
+</svg>
