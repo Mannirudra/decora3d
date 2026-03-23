@@ -431,3 +431,33 @@ For technical support or Shopify customizations, contact the development team.
 ---
 
 *Document version 1.0 | Decora3D | www.decora3d.in*
+
+---
+
+## ⚡ FAST IMPORT — CSV UPLOAD (Skip Manual Product Entry)
+
+Instead of adding products one by one, use the CSV files in `data/`:
+
+### Import Products (all 28 in one upload)
+1. **Shopify Admin → Products → Import**
+2. Click **Add file** → select `data/shopify-products-import.csv`
+3. Check **"Overwrite existing products that have matching handles"**
+4. Click **Upload and continue → Import products**
+5. Shopify will import all **203 variant rows** across **36 products** in ~60 seconds
+
+### Import Collections
+Shopify doesn't support collection CSV import natively.
+**Workaround — fastest method:**
+Use the **Matrixify (Bulk Import Export)** free app:
+1. Install from Shopify App Store (free tier works)
+2. **Import → Collections tab → Upload** `data/shopify-collections-import.csv`
+3. All 8 collections created in one click
+
+### After CSV import, assign products to collections:
+Option A — **Matrixify**: add a `Collection` column to the products CSV (fastest)
+Option B — **Shopify Admin**: Products → select all → Actions → Add to collection
+
+### ⚠️ After import, do these 3 things:
+1. Add photos to each product (Products → [product] → Add media)
+2. Workshop products: uncheck **"This is a physical product"** + disable inventory tracking
+3. Add your WhatsApp number in theme.liquid (`91XXXXXXXXXX`)
