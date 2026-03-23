@@ -1,0 +1,48 @@
+{% comment %}
+  Decora3D — Sticky Add to Cart Bar
+  Appears when user scrolls past the product form
+  Include at bottom of product template
+  Usage: {% render 'd3d-sticky-atc', product: product %}
+{% endcomment %}
+
+<div class="d3d-sticky-atc" id="d3d-sticky-atc" aria-hidden="true">
+  <div class="d3d-sticky-atc__title">{{ product.title }}</div>
+  <div class="d3d-sticky-atc__price">
+    {% if product.compare_at_price > product.price %}
+      <s style="color: #666; font-size: 12px; margin-right: 6px;">
+        {{ product.compare_at_price | money }}
+      </s>
+    {% endif %}
+    {{ product.price | money }}
+  </div>
+  <button
+    class="d3d-sticky-atc__btn"
+    onclick="document.getElementById('d3d-main-atc')?.click()"
+    aria-label="Add to cart"
+  >
+    ADD TO CART
+  </button>
+</div>
+
+<script>
+(function() {
+  var stickyBar = document.getElementById('d3d-sticky-atc');
+  var mainForm = document.querySelector('.product-form, #product-form, form[action="/cart/add"]');
+
+  if (!stickyBar || !mainForm) return;
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (!entry.isIntersecting) {
+        stickyBar.classList.add('visible');
+        stickyBar.setAttribute('aria-hidden', 'false');
+      } else {
+        stickyBar.classList.remove('visible');
+        stickyBar.setAttribute('aria-hidden', 'true');
+      }
+    });
+  }, { threshold: 0, rootMargin: '-80px 0px 0px 0px' });
+
+  observer.observe(mainForm);
+})();
+</script>

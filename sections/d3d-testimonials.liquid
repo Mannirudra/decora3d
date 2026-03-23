@@ -1,0 +1,90 @@
+{% comment %}
+  Decora3D — Testimonials Section
+  3 seed testimonials (replace with Judge.me reviews post-launch)
+{% endcomment %}
+
+<section class="d3d-section shopify-section" style="background-color: #111;">
+  <div class="d3d-page-width">
+    <div class="d3d-section-heading">
+      <span class="d3d-section-heading__eyebrow">VERIFIED BUYERS</span>
+      <h2 class="d3d-section-heading__title">{{ section.settings.heading }}</h2>
+      <div class="d3d-section-heading__divider"></div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+
+      <div style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 6px; padding: 28px 24px; position: relative;">
+        <div style="color: #C8A84B; font-size: 2rem; line-height: 1; margin-bottom: 14px; font-family: Georgia, serif;">"</div>
+        <div style="color: #C8A84B; margin-bottom: 10px;">★★★★★</div>
+        <p style="color: #F5F5F0; font-size: 14px; line-height: 1.8; margin-bottom: 20px; font-style: italic;">"The Voronoi pendant lamp is absolutely stunning. Better quality than I expected, and it arrived well-packed. The geometric shadows it creates on the ceiling are magical. My guests can't stop asking where I got it!"</p>
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <div style="width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #C8A84B, #9A7C2A); display: flex; align-items: center; justify-content: center; font-family: Anton, sans-serif; color: #111; font-size: 16px;">P</div>
+          <div>
+            <div style="font-weight: 600; color: #F5F5F0; font-size: 14px;">Priya M.</div>
+            <div style="font-size: 12px; color: #666;">Gurugram, Delhi NCR</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="background: #1a1a1a; border: 1px solid #C8A84B; border-radius: 6px; padding: 28px 24px; position: relative;">
+        <div style="color: #C8A84B; font-size: 2rem; line-height: 1; margin-bottom: 14px; font-family: Georgia, serif;">"</div>
+        <div style="color: #C8A84B; margin-bottom: 10px;">★★★★★</div>
+        <p style="color: #F5F5F0; font-size: 14px; line-height: 1.8; margin-bottom: 20px; font-style: italic;">"Ordered the Corporate Gifting Pack for our Diwali gifting — 50 units with our logo. The team was super responsive, delivered on time, and the quality blew our clients away. Will order again for the annual event."</p>
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <div style="width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #C8A84B, #9A7C2A); display: flex; align-items: center; justify-content: center; font-family: Anton, sans-serif; color: #111; font-size: 16px;">R</div>
+          <div>
+            <div style="font-weight: 600; color: #F5F5F0; font-size: 14px;">Rohan K.</div>
+            <div style="font-size: 12px; color: #666;">HR Manager, Noida</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 6px; padding: 28px 24px; position: relative;">
+        <div style="color: #C8A84B; font-size: 2rem; line-height: 1; margin-bottom: 14px; font-family: Georgia, serif;">"</div>
+        <div style="color: #C8A84B; margin-bottom: 10px;">★★★★★</div>
+        <p style="color: #F5F5F0; font-size: 14px; line-height: 1.8; margin-bottom: 20px; font-style: italic;">"Took my 10-year-old to the Kids Workshop. She was thrilled — the staff was patient, the activity was perfectly explained, and she's now obsessed with 3D printing. We've booked the Custom Creation session next month!"</p>
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <div style="width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #C8A84B, #9A7C2A); display: flex; align-items: center; justify-content: center; font-family: Anton, sans-serif; color: #111; font-size: 16px;">A</div>
+          <div>
+            <div style="font-weight: 600; color: #F5F5F0; font-size: 14px;">Anjali S.</div>
+            <div style="font-size: 12px; color: #666;">Parent, South Delhi</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align: center; margin-top: 36px; color: #666; font-size: 13px;">
+      ⭐ Average 4.9/5 from our customers · <a href="/collections/all#reviews" style="color: #C8A84B; text-decoration: none;">Read all reviews</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 768px) {
+    .d3d-testimonials-grid {
+      grid-template-columns: 1fr !important;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "D3D Testimonials",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading",
+      "default": "WHAT OUR CUSTOMERS SAY"
+    }
+  ],
+  "presets": [
+    {
+      "name": "D3D Testimonials"
+    }
+  ]
+}
+{% endschema %}

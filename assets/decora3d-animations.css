@@ -1,0 +1,434 @@
+/* ============================================================
+   DECORA3D — ANIMATIONS & MOTION
+   Brand: Decora3D | www.decora3d.in | Delhi NCR
+   ============================================================ */
+
+/* ── Keyframe Library ── */
+
+/* Fade up (general reveal) */
+@keyframes d3d-fade-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Fade in (opacity only) */
+@keyframes d3d-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Slide in from left */
+@keyframes d3d-slide-left {
+  from { opacity: 0; transform: translateX(-40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* Slide in from right */
+@keyframes d3d-slide-right {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* Scale up */
+@keyframes d3d-scale-in {
+  from { opacity: 0; transform: scale(0.88); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* Gold shimmer sweep (for text) */
+@keyframes d3d-shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+/* Floating bob (logo, badges) */
+@keyframes d3d-float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+
+/* Spin slow (loading, icons) */
+@keyframes d3d-spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Pulse glow (CTA buttons) */
+@keyframes d3d-pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(200, 168, 75, 0.4); }
+  50%       { box-shadow: 0 0 0 12px rgba(200, 168, 75, 0); }
+}
+
+/* Typewriter cursor blink */
+@keyframes d3d-blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* Stagger children reveal */
+@keyframes d3d-stagger-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Border trace (for card hover) */
+@keyframes d3d-border-trace {
+  0%   { clip-path: inset(0 100% 100% 0); }
+  25%  { clip-path: inset(0 0 100% 0); }
+  50%  { clip-path: inset(0 0 0 0); }
+  100% { clip-path: inset(0 0 0 0); }
+}
+
+/* Hero particle drift */
+@keyframes d3d-particle-drift {
+  0%   { transform: translateY(0) translateX(0) rotate(0deg); opacity: 0; }
+  10%  { opacity: 1; }
+  90%  { opacity: 1; }
+  100% { transform: translateY(-100vh) translateX(20px) rotate(360deg); opacity: 0; }
+}
+
+/* Gold bar grow */
+@keyframes d3d-bar-grow {
+  from { width: 0; }
+  to   { width: 60px; }
+}
+
+/* Stat counter pop */
+@keyframes d3d-counter-pop {
+  0%   { transform: scale(0.5); opacity: 0; }
+  70%  { transform: scale(1.1); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Card flip entrance */
+@keyframes d3d-flip-in {
+  from { opacity: 0; transform: perspective(600px) rotateX(-20deg) translateY(30px); }
+  to   { opacity: 1; transform: perspective(600px) rotateX(0deg) translateY(0); }
+}
+
+/* Underline draw (nav hover) */
+@keyframes d3d-underline-draw {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+/* ── Scroll-Triggered Reveal Classes ── */
+/* Applied by JS IntersectionObserver */
+
+.d3d-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.d3d-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.d3d-reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.d3d-reveal-left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.d3d-reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.d3d-reveal-right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.d3d-reveal-scale {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.d3d-reveal-scale.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Stagger delay helpers */
+.d3d-delay-1 { transition-delay: 0.1s !important; }
+.d3d-delay-2 { transition-delay: 0.2s !important; }
+.d3d-delay-3 { transition-delay: 0.3s !important; }
+.d3d-delay-4 { transition-delay: 0.4s !important; }
+.d3d-delay-5 { transition-delay: 0.5s !important; }
+.d3d-delay-6 { transition-delay: 0.6s !important; }
+
+/* ── Hero Entrance Animations ── */
+
+.d3d-hero__eyebrow {
+  animation: d3d-slide-left 0.7s ease both;
+  animation-delay: 0.2s;
+}
+
+.d3d-hero__headline {
+  animation: d3d-fade-up 0.9s ease both;
+  animation-delay: 0.4s;
+}
+
+.d3d-hero__sub {
+  animation: d3d-fade-up 0.8s ease both;
+  animation-delay: 0.65s;
+}
+
+.d3d-hero__buttons {
+  animation: d3d-fade-up 0.8s ease both;
+  animation-delay: 0.85s;
+}
+
+/* ── Gold Shimmer Text ── */
+.d3d-shimmer-text {
+  background: linear-gradient(
+    90deg,
+    #E8D5A0 0%,
+    #C8A84B 20%,
+    #fff8e8 40%,
+    #C8A84B 60%,
+    #9A7C2A 80%,
+    #E8D5A0 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: d3d-shimmer 3s linear infinite;
+}
+
+/* ── CTA Button Pulse ── */
+.d3d-hero__btn--primary,
+.d3d-corp-strip__btn {
+  animation: d3d-pulse-glow 2.5s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
+
+/* ── Floating Badge ── */
+.d3d-float-badge {
+  animation: d3d-float 3s ease-in-out infinite;
+}
+
+/* ── Section Heading Divider Draw ── */
+.d3d-section-heading__divider {
+  animation: d3d-bar-grow 1s ease both;
+  animation-play-state: paused;
+}
+
+.d3d-section-heading.is-visible .d3d-section-heading__divider {
+  animation-play-state: running;
+}
+
+/* ── Card Hover Effects ── */
+
+/* Product card 3D tilt effect */
+.card,
+.card-wrapper {
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.card:hover,
+.card-wrapper:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 30px rgba(200, 168, 75, 0.08) !important;
+}
+
+/* Way cards stagger entrance */
+.d3d-way-card {
+  animation: d3d-flip-in 0.6s ease both;
+}
+
+.d3d-way-card:nth-child(1) { animation-delay: 0.1s; }
+.d3d-way-card:nth-child(2) { animation-delay: 0.2s; }
+.d3d-way-card:nth-child(3) { animation-delay: 0.3s; }
+.d3d-way-card:nth-child(4) { animation-delay: 0.4s; }
+
+/* ── Navigation Underline Draw ── */
+.header__menu-item > a::after,
+.list-menu__item > a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: linear-gradient(90deg, #C8A84B, #9A7C2A);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+  border-radius: 1px;
+}
+
+.header__menu-item > a:hover::after,
+.list-menu__item > a:hover::after {
+  transform: scaleX(1);
+}
+
+/* ── Gold Particle Canvas (hero) ── */
+#d3d-particles-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* ── Section Transitions ── */
+.shopify-section {
+  transition: background-color 0.3s ease;
+}
+
+/* ── Trust Badge Entrance ── */
+.d3d-trust__item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.d3d-trust.is-visible .d3d-trust__item:nth-child(1) { opacity: 1; transform: none; transition-delay: 0.0s; }
+.d3d-trust.is-visible .d3d-trust__item:nth-child(2) { opacity: 1; transform: none; transition-delay: 0.1s; }
+.d3d-trust.is-visible .d3d-trust__item:nth-child(3) { opacity: 1; transform: none; transition-delay: 0.2s; }
+.d3d-trust.is-visible .d3d-trust__item:nth-child(4) { opacity: 1; transform: none; transition-delay: 0.3s; }
+.d3d-trust.is-visible .d3d-trust__item:nth-child(5) { opacity: 1; transform: none; transition-delay: 0.4s; }
+
+/* ── Workshop Card Entrance ── */
+.d3d-workshop-card {
+  animation: d3d-fade-up 0.6s ease both;
+}
+
+.d3d-workshop-card:nth-child(1) { animation-delay: 0.0s; }
+.d3d-workshop-card:nth-child(2) { animation-delay: 0.15s; }
+.d3d-workshop-card:nth-child(3) { animation-delay: 0.3s; }
+.d3d-workshop-card:nth-child(4) { animation-delay: 0.45s; }
+
+/* ── Image Hover Zoom ── */
+.card__media,
+.card-wrapper .media {
+  overflow: hidden;
+}
+
+.card__media img,
+.card-wrapper .media img {
+  transition: transform 0.5s ease !important;
+}
+
+.card:hover .card__media img,
+.card-wrapper:hover .media img {
+  transform: scale(1.06) !important;
+}
+
+/* ── Announcement Bar Marquee ── */
+.d3d-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: d3d-marquee 30s linear infinite;
+}
+
+@keyframes d3d-marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.d3d-marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* ── Price Count-Up ── */
+.d3d-count-up {
+  display: inline-block;
+  animation: d3d-counter-pop 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+/* ── Testimonial Card Entrance ── */
+.d3d-testimonials-grid > div {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.d3d-testimonials-grid.is-visible > div:nth-child(1) { opacity: 1; transform: none; transition-delay: 0.0s; }
+.d3d-testimonials-grid.is-visible > div:nth-child(2) { opacity: 1; transform: none; transition-delay: 0.15s; }
+.d3d-testimonials-grid.is-visible > div:nth-child(3) { opacity: 1; transform: none; transition-delay: 0.3s; }
+
+/* ── Loading Spinner (for cart / form submits) ── */
+.d3d-spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(200, 168, 75, 0.2);
+  border-top-color: #C8A84B;
+  border-radius: 50%;
+  display: inline-block;
+  animation: d3d-spin-slow 0.7s linear infinite;
+}
+
+/* ── Scroll progress bar (top of page) ── */
+#d3d-scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #9A7C2A, #C8A84B, #E8D5A0);
+  z-index: 99999;
+  width: 0%;
+  transition: width 0.1s ease;
+  pointer-events: none;
+}
+
+/* ── Page transition overlay ── */
+.d3d-page-transition {
+  position: fixed;
+  inset: 0;
+  background-color: #0f0f0f;
+  z-index: 99998;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.d3d-page-transition.active {
+  opacity: 1;
+}
+
+/* ── Input focus animation ── */
+.d3d-form input:focus,
+.d3d-form textarea:focus,
+.field__input:focus {
+  animation: d3d-pulse-glow 1s ease;
+}
+
+/* ── Hero Stats Counter ── */
+.d3d-hero .stat-number {
+  display: inline-block;
+  animation: d3d-counter-pop 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+.d3d-hero > .d3d-page-width > .d3d-hero__content > div:last-child > div:nth-child(1) { animation-delay: 1.2s; }
+.d3d-hero > .d3d-page-width > .d3d-hero__content > div:last-child > div:nth-child(2) { animation-delay: 1.35s; }
+.d3d-hero > .d3d-page-width > .d3d-hero__content > div:last-child > div:nth-child(3) { animation-delay: 1.5s; }
+.d3d-hero > .d3d-page-width > .d3d-hero__content > div:last-child > div:nth-child(4) { animation-delay: 1.65s; }
+
+/* ── Reduce motion support ── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .d3d-reveal,
+  .d3d-reveal-left,
+  .d3d-reveal-right,
+  .d3d-reveal-scale {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

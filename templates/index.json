@@ -1,0 +1,216 @@
+{
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-block-1": {
+          "type": "announcement",
+          "settings": {
+            "text": "🚀 Free Shipping on orders above ₹999 | Delivering Pan India | Made in Delhi NCR",
+            "link": "/collections/all"
+          }
+        }
+      },
+      "block_order": ["announcement-block-1"],
+      "settings": {
+        "color_scheme": "background-1",
+        "auto_rotate": false
+      }
+    },
+    "d3d-hero": {
+      "type": "d3d-hero-banner",
+      "settings": {
+        "eyebrow": "DELHI NCR'S FIRST 3D PRINTING EXPERIENCE STUDIO",
+        "headline": "IMAGINE IT.\nPRINT IT.\nOWN IT.",
+        "subtext": "Unique 3D printed home decor, lamps, wall art & corporate gifts. Designed with precision, crafted in Delhi NCR.",
+        "btn1_text": "SHOP PRODUCTS",
+        "btn1_link": "/collections/all",
+        "btn2_text": "VISIT THE STUDIO",
+        "btn2_link": "/pages/visit-studio",
+        "overlay_opacity": 60
+      }
+    },
+    "d3d-trust-badges": {
+      "type": "d3d-trust-badges",
+      "settings": {}
+    },
+    "d3d-four-ways": {
+      "type": "d3d-four-ways",
+      "settings": {
+        "heading": "THE DECORA3D EXPERIENCE"
+      }
+    },
+    "featured-lamps": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "LAMPS & LIGHTING",
+        "collection": "lamps-lighting",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": 2,
+        "show_view_all": true,
+        "view_all_style": "button",
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "featured-wall-art": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "WALL ART & PANELS",
+        "collection": "wall-art",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": 2,
+        "show_view_all": true,
+        "view_all_style": "button",
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "d3d-corporate-strip": {
+      "type": "d3d-corporate-strip",
+      "settings": {
+        "label": "CORPORATE GIFTING & BULK ORDERS",
+        "headline": "MAKE YOUR BRAND UNFORGETTABLE",
+        "subtext": "Custom 3D printed corporate gifts. Minimum 25 units. Pan India delivery. GST invoices provided. Diwali & event gifting specialists.",
+        "btn_text": "GET A QUOTE",
+        "btn_link": "/pages/corporate-gifting"
+      }
+    },
+    "featured-spiritual": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "SPIRITUAL & TEMPLE DECOR",
+        "collection": "spiritual-decor",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": 2,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "d3d-workshop-preview": {
+      "type": "d3d-workshop-preview",
+      "settings": {
+        "heading": "3D PRINTING WORKSHOPS",
+        "subtext": "Book a seat at our Delhi NCR studio. Learn the future of manufacturing."
+      }
+    },
+    "d3d-testimonials": {
+      "type": "d3d-testimonials",
+      "settings": {
+        "heading": "WHAT OUR CUSTOMERS SAY"
+      }
+    },
+    "featured-collections-grid": {
+      "type": "collection-list",
+      "blocks": {
+        "coll-1": {
+          "type": "featured_collection",
+          "settings": { "collection": "lamps-lighting" }
+        },
+        "coll-2": {
+          "type": "featured_collection",
+          "settings": { "collection": "wall-art" }
+        },
+        "coll-3": {
+          "type": "featured_collection",
+          "settings": { "collection": "planters-vases" }
+        },
+        "coll-4": {
+          "type": "featured_collection",
+          "settings": { "collection": "organizers" }
+        },
+        "coll-5": {
+          "type": "featured_collection",
+          "settings": { "collection": "spiritual-decor" }
+        },
+        "coll-6": {
+          "type": "featured_collection",
+          "settings": { "collection": "keychains-accessories" }
+        }
+      },
+      "block_order": ["coll-1","coll-2","coll-3","coll-4","coll-5","coll-6"],
+      "settings": {
+        "title": "SHOP BY CATEGORY",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "columns_mobile": 2,
+        "show_view_all": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "brand-block": {
+          "type": "link_list",
+          "settings": {
+            "heading": "DECORA3D",
+            "menu": "footer-brand"
+          }
+        },
+        "shop-block": {
+          "type": "link_list",
+          "settings": {
+            "heading": "QUICK SHOP",
+            "menu": "footer-shop"
+          }
+        },
+        "experience-block": {
+          "type": "link_list",
+          "settings": {
+            "heading": "EXPERIENCE",
+            "menu": "footer-experience"
+          }
+        },
+        "support-block": {
+          "type": "link_list",
+          "settings": {
+            "heading": "SUPPORT",
+            "menu": "footer-support"
+          }
+        },
+        "newsletter-block": {
+          "type": "newsletter",
+          "settings": {
+            "heading": "STAY CONNECTED",
+            "subtext": "New designs, workshop dates & exclusive offers."
+          }
+        }
+      },
+      "block_order": ["brand-block","shop-block","experience-block","support-block","newsletter-block"],
+      "settings": {
+        "newsletter_enable": true,
+        "show_social": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "d3d-hero",
+    "d3d-trust-badges",
+    "d3d-four-ways",
+    "featured-lamps",
+    "featured-wall-art",
+    "d3d-corporate-strip",
+    "featured-spiritual",
+    "d3d-workshop-preview",
+    "d3d-testimonials",
+    "featured-collections-grid",
+    "footer"
+  ]
+}

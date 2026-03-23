@@ -1,0 +1,60 @@
+{% comment %}
+  Decora3D — Product Badges / Metafield Info
+  Shows material, print time, and special attributes below product title
+  Usage: {% render 'd3d-product-badges', product: product %}
+{% endcomment %}
+
+<div class="d3d-badges">
+  {% comment %} Material badge {% endcomment %}
+  {% if product.metafields.custom.material != blank %}
+    <span class="d3d-badge d3d-badge--gold">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      {{ product.metafields.custom.material }}
+    </span>
+  {% elsif product.type != blank %}
+    <span class="d3d-badge d3d-badge--gold">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      {{ product.type }}
+    </span>
+  {% endif %}
+
+  {% comment %} Print time badge {% endcomment %}
+  {% if product.metafields.custom.print_time != blank %}
+    <span class="d3d-badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      Print: {{ product.metafields.custom.print_time }}
+    </span>
+  {% endif %}
+
+  {% comment %} Minimum order badge for corporate {% endcomment %}
+  {% if product.metafields.custom.minimum_order != blank %}
+    <span class="d3d-badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+      Min Order: {{ product.metafields.custom.minimum_order }}
+    </span>
+  {% endif %}
+
+  {% comment %} Made in Delhi badge {% endcomment %}
+  <span class="d3d-badge">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+    Made in Delhi NCR
+  </span>
+
+  {% comment %} Workshop / experience badge {% endcomment %}
+  {% if product.type == 'Experience' or product.type == 'Workshop' %}
+    <span class="d3d-badge d3d-badge--gold">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      Experience · No Shipping
+    </span>
+  {% endif %}
+</div>
+
+{% comment %} Urgency stock counter (show if < 5 in stock) {% endcomment %}
+{% if product.selected_or_first_available_variant.inventory_management == 'shopify' %}
+  {% assign stock = product.selected_or_first_available_variant.inventory_quantity %}
+  {% if stock > 0 and stock < 5 %}
+    <div class="d3d-stock-urgency">
+      Only {{ stock }} left — order soon!
+    </div>
+  {% endif %}
+{% endif %}

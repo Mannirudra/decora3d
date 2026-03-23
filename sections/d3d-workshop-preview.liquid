@@ -1,0 +1,141 @@
+{% comment %}
+  Decora3D — Workshop Preview Section
+  Shows 4 workshop cards on homepage
+{% endcomment %}
+
+<section class="d3d-section shopify-section" style="background-color: #0f0f0f; border-top: 1px solid #2a2a2a;">
+  <div class="d3d-page-width">
+    <div class="d3d-section-heading">
+      <span class="d3d-section-heading__eyebrow">HANDS-ON LEARNING</span>
+      <h2 class="d3d-section-heading__title">{{ section.settings.heading }}</h2>
+      <p style="color: #aaa; margin-top: 12px; font-size: 15px;">{{ section.settings.subtext }}</p>
+      <div class="d3d-section-heading__divider"></div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+
+      {% assign workshop_data = "Intro to 3D Printing|₹499|2 Hours|Beginners|🎓|Learn the basics of FDM printing. Design a simple object & take it home. Includes material.|D3D-WRK-001,Custom Creation Workshop|₹999|4 Hours|All Levels|🛠️|Bring your idea, we'll model it in 3D and print it. Full design-to-print experience.|D3D-WRK-002,Kids 3D Printing|₹449|2 Hours|Ages 7–14|👦|Fun, safe intro to 3D printing for children. Each child creates & keeps their mini-print.|D3D-WRK-003,Corporate Team Experience|₹999/person|Half Day|Teams (10+)|🏢|Team building with a twist. Groups design, print & compete. GST invoice provided.|D3D-WRK-004" | split: "," %}
+
+      <div class="d3d-workshop-card" style="padding: 0; overflow: hidden;">
+        <div style="background: linear-gradient(135deg, #1a1400, #2a1f00); padding: 24px 20px; border-bottom: 1px solid #2a2a2a;">
+          <span style="font-size: 32px; display: block; margin-bottom: 10px;">🎓</span>
+          <div style="font-family: 'Anton', sans-serif; color: #E8D5A0; letter-spacing: 2px; font-size: 15px; text-transform: uppercase; margin-bottom: 8px;">INTRO TO 3D PRINTING</div>
+          <div style="color: #C8A84B; font-size: 1.3rem; font-weight: 700;">₹499 <span style="font-size: 12px; color: #666; font-weight: 400;">/ seat</span></div>
+        </div>
+        <div style="padding: 16px 20px;">
+          <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px;">
+            <span style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 8px; font-size: 11px; color: #aaa;">2 HOURS</span>
+            <span style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 8px; font-size: 11px; color: #aaa;">BEGINNERS</span>
+            <span style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 8px; font-size: 11px; color: #aaa;">8 SEATS MAX</span>
+          </div>
+          <p style="color: #aaa; font-size: 13px; line-height: 1.6; margin-bottom: 14px;">Learn FDM printing basics. Design a simple object & take it home. Material included.</p>
+          <a href="/collections/workshops" style="display: block; background: #C8A84B; color: #111; font-family: 'Anton', sans-serif; letter-spacing: 2px; font-size: 12px; text-transform: uppercase; padding: 10px; text-align: center; border-radius: 4px; text-decoration: none;">BOOK NOW</a>
+        </div>
+      </div>
+
+      <div class="d3d-workshop-card" style="padding: 0; overflow: hidden; border-color: #C8A84B;">
+        <div style="background: linear-gradient(135deg, #1a1400, #2a1f00); padding: 24px 20px; border-bottom: 1px solid #C8A84B; position: relative;">
+          <span style="position: absolute; top: 12px; right: 12px; background: #C8A84B; color: #111; font-family: 'Anton', sans-serif; font-size: 10px; letter-spacing: 1px; padding: 3px 8px; border-radius: 2px;">POPULAR</span>
+          <span style="font-size: 32px; display: block; margin-bottom: 10px;">🛠️</span>
+          <div style="font-family: 'Anton', sans-serif; color: #E8D5A0; letter-spacing: 2px; font-size: 15px; text-transform: uppercase; margin-bottom: 8px;">CUSTOM CREATION</div>
+          <div style="color: #C8A84B; font-size: 1.3rem; font-weight: 700;">₹999 <span style="font-size: 12px; color: #666; font-weight: 400;">/ seat</span></div>
+        </div>
+        <div style="padding: 16px 20px;">
+          <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px;">
+            <span style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 8px; font-size: 11px; color: #aaa;">4 HOURS</span>
+            <span style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 8px; font-size: 11px; color: #aaa;">ALL LEVELS</span>
+            <span style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 8px; font-size: 11px; color: #aaa;">6 SEATS MAX</span>
+          </div>
+          <p style="color: #aaa; font-size: 13px; line-height: 1.6; margin-bottom: 14px;">Bring your idea — we model it in 3D & print it. Full design-to-print experience.</p>
+          <a href="/collections/workshops" style="display: block; background: #C8A84B; color: #111; font-family: 'Anton', sans-serif; letter-spacing: 2px; font-size: 12px; text-transform: uppercase; padding: 10px; text-align: center; border-radius: 4px; text-decoration: none;">BOOK NOW</a>
+        </div>
+      </div>
+
+      <div class="d3d-workshop-card" style="padding: 0; overflow: hidden;">
+        <div style="background: linear-gradient(135deg, #1a1400, #2a1f00); padding: 24px 20px; border-bottom: 1px solid #2a2a2a;">
+          <span style="font-size: 32px; display: block; margin-bottom: 10px;">👦</span>
+          <div style="font-family: 'Anton', sans-serif; color: #E8D5A0; letter-spacing: 2px; font-size: 15px; text-transform: uppercase; margin-bottom: 8px;">KIDS WORKSHOP</div>
+          <div style="color: #C8A84B; font-size: 1.3rem; font-weight: 700;">₹449 <span style="font-size: 12px; color: #666; font-weight: 400;">/ child</span></div>
+        </div>
+        <div style="padding: 16px 20px;">
+          <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px;">
+            <span style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 8px; font-size: 11px; color: #aaa;">2 HOURS</span>
+            <span style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 8px; font-size: 11px; color: #aaa;">AGES 7–14</span>
+            <span style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 8px; font-size: 11px; color: #aaa;">10 SEATS MAX</span>
+          </div>
+          <p style="color: #aaa; font-size: 13px; line-height: 1.6; margin-bottom: 14px;">Fun, safe intro for children. Each child designs & keeps their own mini-print!</p>
+          <a href="/collections/workshops" style="display: block; background: #C8A84B; color: #111; font-family: 'Anton', sans-serif; letter-spacing: 2px; font-size: 12px; text-transform: uppercase; padding: 10px; text-align: center; border-radius: 4px; text-decoration: none;">BOOK NOW</a>
+        </div>
+      </div>
+
+      <div class="d3d-workshop-card" style="padding: 0; overflow: hidden;">
+        <div style="background: linear-gradient(135deg, #1a1400, #2a1f00); padding: 24px 20px; border-bottom: 1px solid #2a2a2a;">
+          <span style="font-size: 32px; display: block; margin-bottom: 10px;">🏢</span>
+          <div style="font-family: 'Anton', sans-serif; color: #E8D5A0; letter-spacing: 2px; font-size: 15px; text-transform: uppercase; margin-bottom: 8px;">CORPORATE TEAM</div>
+          <div style="color: #C8A84B; font-size: 1.3rem; font-weight: 700;">₹999 <span style="font-size: 12px; color: #666; font-weight: 400;">/ person</span></div>
+        </div>
+        <div style="padding: 16px 20px;">
+          <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px;">
+            <span style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 8px; font-size: 11px; color: #aaa;">HALF DAY</span>
+            <span style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 8px; font-size: 11px; color: #aaa;">TEAMS 10+</span>
+            <span style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 8px; font-size: 11px; color: #aaa;">GST INVOICE</span>
+          </div>
+          <p style="color: #aaa; font-size: 13px; line-height: 1.6; margin-bottom: 14px;">Team building with a twist. Groups design, print & compete. Pan India delivery available.</p>
+          <a href="/pages/corporate-gifting" style="display: block; background: transparent; color: #C8A84B; border: 1px solid #C8A84B; font-family: 'Anton', sans-serif; letter-spacing: 2px; font-size: 12px; text-transform: uppercase; padding: 10px; text-align: center; border-radius: 4px; text-decoration: none;">ENQUIRE</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="/collections/workshops" style="display: inline-block; background: transparent; color: #C8A84B; border: 1px solid #C8A84B; font-family: 'Anton', sans-serif; letter-spacing: 2px; font-size: 14px; text-transform: uppercase; padding: 14px 36px; border-radius: 4px; text-decoration: none; transition: all 0.2s;">
+        VIEW ALL WORKSHOP DATES →
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 900px) {
+    .d3d-workshop-card ~ .d3d-workshop-card {
+      display: none;
+    }
+  }
+  @media (max-width: 900px) {
+    .d3d-section .d3d-page-width > div[style*="grid-template-columns: repeat(4"] {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+  }
+  @media (max-width: 600px) {
+    .d3d-section .d3d-page-width > div[style*="grid-template-columns"] {
+      grid-template-columns: 1fr !important;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "D3D Workshop Preview",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading",
+      "default": "3D PRINTING WORKSHOPS"
+    },
+    {
+      "type": "text",
+      "id": "subtext",
+      "label": "Subtext",
+      "default": "Book a seat at our Delhi NCR studio. Learn the future of manufacturing."
+    }
+  ],
+  "presets": [
+    {
+      "name": "D3D Workshop Preview"
+    }
+  ]
+}
+{% endschema %}

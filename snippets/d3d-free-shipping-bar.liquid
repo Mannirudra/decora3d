@@ -1,0 +1,29 @@
+{% comment %}
+  Decora3D — Free Shipping Progress Bar
+  Usage: {% render 'd3d-free-shipping-bar', cart: cart %}
+  Threshold: ₹999
+{% endcomment %}
+
+{% assign threshold = 99900 %} {% comment %} ₹999 in paise {% endcomment %}
+{% assign cart_total = cart.total_price %}
+{% assign remaining = threshold | minus: cart_total %}
+
+<div class="d3d-shipping-bar {% if cart_total >= threshold %}d3d-shipping-bar--unlocked{% endif %}" id="d3d-shipping-bar">
+  {% if cart_total >= threshold %}
+    <div class="d3d-shipping-bar__msg">
+      🎉 <strong>You've unlocked FREE shipping!</strong>
+    </div>
+    <div class="d3d-shipping-bar__track">
+      <div class="d3d-shipping-bar__fill" style="width: 100%;"></div>
+    </div>
+  {% else %}
+    {% assign pct = cart_total | times: 100 | divided_by: threshold %}
+    {% assign remaining_rupees = remaining | divided_by: 100 %}
+    <div class="d3d-shipping-bar__msg">
+      Add <span>₹{{ remaining_rupees }}</span> more for <strong>FREE shipping!</strong>
+    </div>
+    <div class="d3d-shipping-bar__track">
+      <div class="d3d-shipping-bar__fill" style="width: {{ pct }}%;"></div>
+    </div>
+  {% endif %}
+</div>

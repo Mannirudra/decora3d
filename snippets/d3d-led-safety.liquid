@@ -1,0 +1,24 @@
+{% comment %}
+  Decora3D — LED Safety Notice Snippet
+  Include on ALL lamp/pendant product pages
+  Usage: {% render 'd3d-led-safety' %}
+  Conditional: Only renders if product has tag 'lamp' or 'pendant' or type contains 'Lamp'
+{% endcomment %}
+
+{% assign is_lamp = false %}
+{% for tag in product.tags %}
+  {% assign tag_lower = tag | downcase %}
+  {% if tag_lower contains 'lamp' or tag_lower contains 'pendant' or tag_lower contains 'lighting' %}
+    {% assign is_lamp = true %}
+  {% endif %}
+{% endfor %}
+{% if product.type contains 'Lamp' or product.type contains 'Light' %}
+  {% assign is_lamp = true %}
+{% endif %}
+
+{% if is_lamp %}
+<div class="d3d-led-safety">
+  <div class="d3d-led-safety__title">⚠️ IMPORTANT — LED BULB ONLY</div>
+  <p>Use LED bulbs only (maximum 5W). Never use incandescent, halogen, or CFL bulbs — PLA+ material softens at 60°C and may deform. Always maintain minimum 3cm clearance between bulb and shade. Keep away from flammable materials. Supervise when in use.</p>
+</div>
+{% endif %}

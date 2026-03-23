@@ -1,0 +1,63 @@
+{% comment %}
+  Decora3D — 4 Ways Section
+  Explains the 4 pillars of the Decora3D offering
+{% endcomment %}
+
+<section class="d3d-four-ways shopify-section">
+  <div class="d3d-page-width">
+    <div class="d3d-section-heading">
+      <span class="d3d-section-heading__eyebrow">WHY DECORA3D</span>
+      <h2 class="d3d-section-heading__title">{{ section.settings.heading }}</h2>
+      <div class="d3d-section-heading__divider"></div>
+    </div>
+
+    <div class="d3d-four-ways__grid">
+
+      <div class="d3d-way-card">
+        <span class="d3d-way-card__icon">🖨️</span>
+        <div class="d3d-way-card__title">UNIQUE PRODUCTS</div>
+        <p class="d3d-way-card__desc">28+ exclusive designs you won't find anywhere else. Geometric, traditional & modern aesthetic — all 3D printed with precision.</p>
+      </div>
+
+      <div class="d3d-way-card">
+        <span class="d3d-way-card__icon">✏️</span>
+        <div class="d3d-way-card__title">FULLY CUSTOM</div>
+        <p class="d3d-way-card__desc">Your name, your brand, your dimensions. We can personalise almost anything — keychains, nameplates, gifting packs & more.</p>
+      </div>
+
+      <div class="d3d-way-card">
+        <span class="d3d-way-card__icon">🏭</span>
+        <div class="d3d-way-card__title">EXPERIENCE STUDIO</div>
+        <p class="d3d-way-card__desc">Visit our 1040 sq.ft Delhi NCR studio. See printers in action, design your own product & attend weekend workshops.</p>
+      </div>
+
+      <div class="d3d-way-card">
+        <span class="d3d-way-card__icon">🎁</span>
+        <div class="d3d-way-card__title">CORPORATE GIFTING</div>
+        <p class="d3d-way-card__desc">Minimum 25 units. Diwali, onboarding, events. GST invoices, pan India delivery. Impress clients with something truly unique.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "D3D Four Ways",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading",
+      "default": "THE DECORA3D EXPERIENCE"
+    }
+  ],
+  "presets": [
+    {
+      "name": "D3D Four Ways"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,732 @@
+{
+  "products": [
+
+    {
+      "id": 1,
+      "sku": "D3D-LAMP-001",
+      "title": "Rajasthan Radiance Table Lamp",
+      "handle": "rajasthan-radiance-table-lamp",
+      "collection": "lamps-lighting",
+      "type": "Lamp",
+      "price": 249900,
+      "compare_at_price": 299900,
+      "material": "PLA+",
+      "weight_grams": 800,
+      "tags": ["lamp", "table-lamp", "lighting", "rajasthan", "pla-plus", "bedroom", "handcrafted"],
+      "variants": [
+        {"title": "Natural White / LED Included", "sku": "D3D-LAMP-001-NW-LED", "price": 249900},
+        {"title": "Natural White / LED Not Included", "sku": "D3D-LAMP-001-NW", "price": 229900},
+        {"title": "Charcoal Black / LED Included", "sku": "D3D-LAMP-001-CB-LED", "price": 249900},
+        {"title": "Charcoal Black / LED Not Included", "sku": "D3D-LAMP-001-CB", "price": 229900},
+        {"title": "Terracotta / LED Included", "sku": "D3D-LAMP-001-TC-LED", "price": 249900},
+        {"title": "Terracotta / LED Not Included", "sku": "D3D-LAMP-001-TC", "price": 229900}
+      ],
+      "options": [
+        {"name": "Colour", "values": ["Natural White", "Charcoal Black", "Terracotta"]},
+        {"name": "LED Bulb", "values": ["LED Included", "LED Not Included"]}
+      ],
+      "metafields": {
+        "print_time": "8–10 hours",
+        "material_detail": "PLA+ from sugarcane-derived bioplastic",
+        "led_compatible": true,
+        "minimum_order": 1
+      },
+      "seo": {
+        "title": "Rajasthan Radiance Table Lamp — 3D Printed PLA+ | Decora3D Delhi",
+        "description": "Inspired by Rajasthani jaali patterns. Geometric 3D printed table lamp in PLA+. Natural White, Charcoal Black & Terracotta. LED bulb option. Handcrafted in Delhi NCR. Free shipping ₹999+."
+      },
+      "description": "<h2>Rajasthan Radiance Table Lamp</h2><p>Inspired by the intricate jaali screens of Rajasthan's palaces, the Rajasthan Radiance Table Lamp casts mesmerising geometric shadow patterns across your walls and ceilings. Each piece is printed layer-by-layer in our Delhi NCR studio using premium PLA+ filament.</p><ul><li>Material: PLA+ bioplastic (eco-friendly, sugarcane-derived)</li><li>Dimensions: 22cm height × 16cm diameter</li><li>Weight: ~380g printed shade</li><li>Cord: 1.5m fabric-braided cord with inline switch</li><li>Base: Weighted ceramic or 3D printed base</li></ul><div style='background:#1a1200;border-left:4px solid #C8A84B;padding:14px;margin:16px 0;border-radius:4px'><strong style='color:#C8A84B'>⚠️ LED ONLY</strong><br>Use LED bulbs only (max 5W). PLA+ softens at 60°C. Never use incandescent or halogen bulbs.</div>"
+    },
+
+    {
+      "id": 2,
+      "sku": "D3D-PEND-001",
+      "title": "Chenab Moon Pendant Light",
+      "handle": "chenab-moon-pendant-light",
+      "collection": "lamps-lighting",
+      "type": "Pendant Light",
+      "price": 329900,
+      "compare_at_price": 399900,
+      "material": "PLA+",
+      "weight_grams": 600,
+      "tags": ["lamp", "pendant", "lighting", "moon", "pla-plus", "ceiling", "dining"],
+      "variants": [
+        {"title": "Natural White / LED Included", "sku": "D3D-PEND-001-NW-LED"},
+        {"title": "Natural White / LED Not Included", "sku": "D3D-PEND-001-NW"},
+        {"title": "Charcoal Black / LED Included", "sku": "D3D-PEND-001-CB-LED"},
+        {"title": "Charcoal Black / LED Not Included", "sku": "D3D-PEND-001-CB"},
+        {"title": "Pearl Gold / LED Included", "sku": "D3D-PEND-001-PG-LED"},
+        {"title": "Pearl Gold / LED Not Included", "sku": "D3D-PEND-001-PG"}
+      ],
+      "options": [
+        {"name": "Colour", "values": ["Natural White", "Charcoal Black", "Pearl Gold"]},
+        {"name": "LED Bulb", "values": ["LED Included", "LED Not Included"]}
+      ],
+      "metafields": {"print_time": "10–12 hours", "material_detail": "PLA+ bioplastic", "led_compatible": true, "minimum_order": 1},
+      "seo": {
+        "title": "Chenab Moon Pendant Light — 3D Printed | Decora3D Delhi",
+        "description": "Organic crescent-inspired pendant light. 3D printed in PLA+. Stunning light diffusion. Perfect for dining tables. Handcrafted in Delhi NCR."
+      }
+    },
+
+    {
+      "id": 3,
+      "sku": "D3D-PEND-002",
+      "title": "Voronoi Pendant Lamp",
+      "handle": "voronoi-pendant-lamp",
+      "collection": "lamps-lighting",
+      "type": "Pendant Light",
+      "price": 349900,
+      "compare_at_price": 419900,
+      "material": "PLA+",
+      "weight_grams": 450,
+      "tags": ["lamp", "pendant", "voronoi", "geometric", "pla-plus", "viral", "bestseller", "lighting"],
+      "variants": [
+        {"title": "Natural White / LED Included", "sku": "D3D-PEND-002-NW-LED"},
+        {"title": "Natural White / LED Not Included", "sku": "D3D-PEND-002-NW"},
+        {"title": "Charcoal Black / LED Included", "sku": "D3D-PEND-002-CB-LED"},
+        {"title": "Charcoal Black / LED Not Included", "sku": "D3D-PEND-002-CB"},
+        {"title": "Copper / LED Included", "sku": "D3D-PEND-002-CP-LED"},
+        {"title": "Copper / LED Not Included", "sku": "D3D-PEND-002-CP"}
+      ],
+      "options": [
+        {"name": "Colour", "values": ["Natural White", "Charcoal Black", "Copper"]},
+        {"name": "LED Bulb", "values": ["LED Included", "LED Not Included"]}
+      ],
+      "metafields": {"print_time": "12–15 hours", "material_detail": "PLA+ bioplastic", "led_compatible": true, "minimum_order": 1},
+      "seo": {
+        "title": "Voronoi Pendant Lamp — Geometric 3D Printed Light | Decora3D Delhi",
+        "description": "Our most viral product. Voronoi cell geometry creates stunning shadow patterns. 3D printed in PLA+. Instant conversation starter. Delhi NCR."
+      }
+    },
+
+    {
+      "id": 4,
+      "sku": "D3D-LAMP-003",
+      "title": "Crinkle Crystal Mood Lamp",
+      "handle": "crinkle-crystal-mood-lamp",
+      "collection": "lamps-lighting",
+      "type": "Lamp",
+      "price": 299900,
+      "compare_at_price": 349900,
+      "material": "PLA+",
+      "weight_grams": 550,
+      "tags": ["lamp", "mood-lamp", "crystal", "crinkle", "pla-plus", "bedroom", "ambient"],
+      "variants": [
+        {"title": "Natural White / LED Included", "sku": "D3D-LAMP-003-NW-LED"},
+        {"title": "Charcoal Black / LED Included", "sku": "D3D-LAMP-003-CB-LED"},
+        {"title": "Frosted Lilac / LED Included", "sku": "D3D-LAMP-003-FL-LED"}
+      ],
+      "options": [
+        {"name": "Colour", "values": ["Natural White", "Charcoal Black", "Frosted Lilac"]},
+        {"name": "LED Bulb", "values": ["LED Included", "LED Not Included"]}
+      ],
+      "metafields": {"print_time": "9–11 hours", "material_detail": "PLA+ bioplastic", "led_compatible": true}
+    },
+
+    {
+      "id": 5,
+      "sku": "D3D-LAMP-004",
+      "title": "Artichoke Mini Table Lamp",
+      "handle": "artichoke-mini-table-lamp",
+      "collection": "lamps-lighting",
+      "type": "Lamp",
+      "price": 189900,
+      "compare_at_price": 229900,
+      "material": "PLA+",
+      "weight_grams": 350,
+      "tags": ["lamp", "table-lamp", "artichoke", "mini", "pla-plus", "desk", "bedroom"],
+      "options": [
+        {"name": "Colour", "values": ["Natural White", "Charcoal Black", "Sage Green"]},
+        {"name": "LED Bulb", "values": ["LED Included", "LED Not Included"]}
+      ],
+      "metafields": {"print_time": "6–8 hours", "material_detail": "PLA+ bioplastic", "led_compatible": true}
+    },
+
+    {
+      "id": 6,
+      "sku": "D3D-PEND-003",
+      "title": "Sabarmati Divinity Pendant Light",
+      "handle": "sabarmati-divinity-pendant-light",
+      "collection": "lamps-lighting",
+      "type": "Pendant Light",
+      "price": 279900,
+      "compare_at_price": 329900,
+      "material": "PLA+",
+      "weight_grams": 520,
+      "tags": ["lamp", "pendant", "divinity", "spiritual", "pla-plus", "pooja", "ceiling"],
+      "options": [
+        {"name": "Colour", "values": ["Natural White", "Charcoal Black", "Antique Gold"]},
+        {"name": "LED Bulb", "values": ["LED Included", "LED Not Included"]}
+      ],
+      "metafields": {"print_time": "10–13 hours", "material_detail": "PLA+ bioplastic", "led_compatible": true}
+    },
+
+    {
+      "id": 7,
+      "sku": "D3D-LAMP-005",
+      "title": "Coral Lamp Cluster Set (Set of 3)",
+      "handle": "coral-lamp-cluster-set",
+      "collection": "lamps-lighting",
+      "type": "Lamp Set",
+      "price": 399900,
+      "compare_at_price": 479900,
+      "material": "PLA+",
+      "weight_grams": 900,
+      "tags": ["lamp", "cluster", "coral", "set", "pla-plus", "ambient", "bundle"],
+      "options": [
+        {"name": "Colour", "values": ["Natural White", "Charcoal Black", "Coral Pink"]},
+        {"name": "LED Bulb", "values": ["LED Included (×3)", "LED Not Included"]}
+      ],
+      "metafields": {"print_time": "18–22 hours", "material_detail": "PLA+ bioplastic", "led_compatible": true}
+    },
+
+    {
+      "id": 8,
+      "sku": "D3D-WALL-001",
+      "title": "Mandala Statement Panel — 40cm",
+      "handle": "mandala-statement-panel-40cm",
+      "collection": "wall-art",
+      "type": "Wall Art",
+      "price": 229900,
+      "compare_at_price": 279900,
+      "material": "PLA+",
+      "weight_grams": 600,
+      "tags": ["wall-art", "mandala", "panel", "pla-plus", "living-room", "spiritual", "geometric"],
+      "options": [
+        {"name": "Colour", "values": ["Natural White", "Matte Black", "Terracotta", "Antique Gold"]},
+        {"name": "Size", "values": ["Standard 40cm", "Large 60cm"]}
+      ],
+      "metafields": {"print_time": "14–18 hours", "material_detail": "PLA+ bioplastic"}
+    },
+
+    {
+      "id": 9,
+      "sku": "D3D-WALL-002",
+      "title": "Coral Reef Relief Wall Sculpture",
+      "handle": "coral-reef-relief-wall-sculpture",
+      "collection": "wall-art",
+      "type": "Wall Art",
+      "price": 249900,
+      "compare_at_price": 299900,
+      "material": "PLA+",
+      "weight_grams": 700,
+      "tags": ["wall-art", "coral", "sculpture", "relief", "pla-plus", "3d-texture", "living-room"],
+      "options": [
+        {"name": "Colour", "values": ["Natural White", "Matte Black", "Terracotta", "Antique Gold"]}
+      ],
+      "metafields": {"print_time": "16–20 hours", "material_detail": "PLA+ bioplastic"}
+    },
+
+    {
+      "id": 10,
+      "sku": "D3D-WALL-003",
+      "title": "Sacred Geometry Triptych (Set of 3)",
+      "handle": "sacred-geometry-triptych",
+      "collection": "wall-art",
+      "type": "Wall Art Set",
+      "price": 349900,
+      "compare_at_price": 419900,
+      "material": "PLA+",
+      "weight_grams": 800,
+      "tags": ["wall-art", "sacred-geometry", "triptych", "set", "pla-plus", "spiritual", "modern"],
+      "options": [
+        {"name": "Colour", "values": ["Natural White", "Matte Black", "Terracotta", "Antique Gold"]}
+      ],
+      "metafields": {"print_time": "20–26 hours", "material_detail": "PLA+ bioplastic"}
+    },
+
+    {
+      "id": 11,
+      "sku": "D3D-WALL-004",
+      "title": "Floating Photo Frame Set (Set of 3)",
+      "handle": "floating-photo-frame-set",
+      "collection": "wall-art",
+      "type": "Photo Frame",
+      "price": 79900,
+      "compare_at_price": 99900,
+      "material": "PLA+",
+      "weight_grams": 250,
+      "tags": ["wall-art", "photo-frame", "floating", "set", "pla-plus", "gift"],
+      "options": [
+        {"name": "Colour", "values": ["Natural White", "Matte Black", "Terracotta", "Antique Gold"]}
+      ],
+      "metafields": {"print_time": "6–8 hours", "material_detail": "PLA+ bioplastic"}
+    },
+
+    {
+      "id": 12,
+      "sku": "D3D-WALL-005",
+      "title": "Abstract Geometric 5-Piece Wall Art",
+      "handle": "abstract-geometric-5-piece-wall-art",
+      "collection": "wall-art",
+      "type": "Wall Art Set",
+      "price": 299900,
+      "compare_at_price": 359900,
+      "material": "PLA+",
+      "weight_grams": 950,
+      "tags": ["wall-art", "abstract", "geometric", "5-piece", "set", "pla-plus", "modern"],
+      "options": [
+        {"name": "Colour", "values": ["Natural White", "Matte Black", "Terracotta", "Antique Gold"]}
+      ],
+      "metafields": {"print_time": "22–28 hours", "material_detail": "PLA+ bioplastic"}
+    },
+
+    {
+      "id": 13,
+      "sku": "D3D-WALL-006",
+      "title": "Delhi City Skyline Wall Art",
+      "handle": "city-skyline-wall-art",
+      "collection": "wall-art",
+      "type": "Wall Art",
+      "price": 179900,
+      "compare_at_price": 219900,
+      "material": "PLA+",
+      "weight_grams": 450,
+      "tags": ["wall-art", "skyline", "city", "delhi", "pla-plus", "gift", "patriotic"],
+      "options": [
+        {"name": "City", "values": ["Delhi", "Mumbai", "Bangalore", "Jaipur", "Kolkata", "Hyderabad", "Chennai"]},
+        {"name": "Colour", "values": ["Natural White", "Matte Black", "Antique Gold"]}
+      ],
+      "metafields": {"print_time": "8–12 hours", "material_detail": "PLA+ bioplastic"}
+    },
+
+    {
+      "id": 14,
+      "sku": "D3D-PLNT-001",
+      "title": "Zesty Smirk Vase",
+      "handle": "zesty-smirk-vase",
+      "collection": "planters-vases",
+      "type": "Vase",
+      "price": 89900,
+      "compare_at_price": 109900,
+      "material": "PLA+",
+      "weight_grams": 300,
+      "tags": ["planter", "vase", "smirk", "quirky", "pla-plus", "tabletop", "gift"],
+      "options": [
+        {"name": "Colour", "values": ["White", "Black", "Terracotta", "Sage Green"]}
+      ],
+      "metafields": {"print_time": "5–7 hours", "material_detail": "PLA+ bioplastic"}
+    },
+
+    {
+      "id": 15,
+      "sku": "D3D-PLNT-002",
+      "title": "Honeycomb Hex Wall Planter Set (×3)",
+      "handle": "honeycomb-hex-wall-planter-set",
+      "collection": "planters-vases",
+      "type": "Wall Planter",
+      "price": 149900,
+      "compare_at_price": 179900,
+      "material": "PETG",
+      "weight_grams": 500,
+      "tags": ["planter", "wall-planter", "honeycomb", "hex", "petg", "set", "kitchen", "bathroom"],
+      "options": [
+        {"name": "Colour", "values": ["White", "Black", "Terracotta", "Sage Green"]}
+      ],
+      "metafields": {"print_time": "10–13 hours", "material_detail": "PETG (heat & moisture resistant)"}
+    },
+
+    {
+      "id": 16,
+      "sku": "D3D-PLNT-003",
+      "title": "Self-Watering Smart Planter",
+      "handle": "self-watering-smart-planter",
+      "collection": "planters-vases",
+      "type": "Smart Planter",
+      "price": 119900,
+      "compare_at_price": 149900,
+      "material": "PETG",
+      "weight_grams": 400,
+      "tags": ["planter", "self-watering", "smart", "petg", "succulents", "indoor"],
+      "options": [
+        {"name": "Colour", "values": ["White", "Black", "Terracotta", "Sage Green", "Ocean Blue"]}
+      ],
+      "metafields": {"print_time": "8–10 hours", "material_detail": "PETG (moisture resistant — plant safe)"}
+    },
+
+    {
+      "id": 17,
+      "sku": "D3D-PLNT-004",
+      "title": "Geometric Faceted Succulent Planter",
+      "handle": "geometric-faceted-succulent-planter",
+      "collection": "planters-vases",
+      "type": "Planter",
+      "price": 99900,
+      "compare_at_price": 119900,
+      "material": "PETG",
+      "weight_grams": 200,
+      "tags": ["planter", "geometric", "faceted", "succulent", "petg", "desk", "gift"],
+      "options": [
+        {"name": "Colour", "values": ["White", "Black", "Terracotta", "Sage Green"]},
+        {"name": "Size", "values": ["Small (6cm)", "Medium (9cm)", "Large (12cm)"]}
+      ],
+      "metafields": {"print_time": "4–7 hours", "material_detail": "PETG (moisture resistant)"}
+    },
+
+    {
+      "id": 18,
+      "sku": "D3D-PLNT-005",
+      "title": "Miconos Candle Holder",
+      "handle": "miconos-candle-holder",
+      "collection": "planters-vases",
+      "type": "Candle Holder",
+      "price": 69900,
+      "compare_at_price": 89900,
+      "material": "PLA+",
+      "weight_grams": 180,
+      "tags": ["candle-holder", "miconos", "pla-plus", "gift", "diwali", "tabletop"],
+      "options": [
+        {"name": "Colour", "values": ["White", "Black", "Terracotta", "Antique Gold"]}
+      ],
+      "metafields": {"print_time": "3–5 hours", "material_detail": "PLA+ bioplastic"}
+    },
+
+    {
+      "id": 19,
+      "sku": "D3D-ORG-001",
+      "title": "Modular Hex Drawer Organizer (6-set)",
+      "handle": "modular-hex-drawer-organizer",
+      "collection": "organizers",
+      "type": "Organizer",
+      "price": 189900,
+      "compare_at_price": 229900,
+      "material": "PLA+",
+      "weight_grams": 650,
+      "tags": ["organizer", "hex", "drawer", "modular", "desk", "pla-plus", "office", "6-set"],
+      "options": [
+        {"name": "Colour", "values": ["Natural White", "Charcoal Black", "Sage Green"]}
+      ],
+      "metafields": {"print_time": "14–18 hours", "material_detail": "PLA+ bioplastic"}
+    },
+
+    {
+      "id": 20,
+      "sku": "D3D-ORG-002",
+      "title": "Geometric Desk Organizer Pro",
+      "handle": "geometric-desk-organizer-pro",
+      "collection": "organizers",
+      "type": "Organizer",
+      "price": 129900,
+      "compare_at_price": 159900,
+      "material": "PLA+",
+      "weight_grams": 450,
+      "tags": ["organizer", "desk", "geometric", "pen-holder", "pla-plus", "office", "wfh"],
+      "options": [
+        {"name": "Colour", "values": ["Natural White", "Charcoal Black", "Terracotta"]}
+      ],
+      "metafields": {"print_time": "9–11 hours", "material_detail": "PLA+ bioplastic"}
+    },
+
+    {
+      "id": 21,
+      "sku": "D3D-ORG-003",
+      "title": "Articulating Phone Stand",
+      "handle": "articulating-phone-stand",
+      "collection": "organizers",
+      "type": "Phone Stand",
+      "price": 49900,
+      "compare_at_price": 69900,
+      "material": "PLA+",
+      "weight_grams": 120,
+      "tags": ["organizer", "phone-stand", "articulating", "desk", "pla-plus", "wfh", "gift"],
+      "options": [
+        {"name": "Colour", "values": ["Natural White", "Charcoal Black", "Sage Green"]}
+      ],
+      "metafields": {"print_time": "3–4 hours", "material_detail": "PLA+ bioplastic"}
+    },
+
+    {
+      "id": 22,
+      "sku": "D3D-ORG-004",
+      "title": "Geometric Key Hook Wall Panel",
+      "handle": "geometric-key-hook-wall-panel",
+      "collection": "organizers",
+      "type": "Wall Hook",
+      "price": 59900,
+      "compare_at_price": 79900,
+      "material": "PLA+",
+      "weight_grams": 200,
+      "tags": ["organizer", "key-hook", "wall", "geometric", "pla-plus", "entryway"],
+      "options": [
+        {"name": "Colour", "values": ["Natural White", "Charcoal Black", "Terracotta"]}
+      ],
+      "metafields": {"print_time": "4–6 hours", "material_detail": "PLA+ bioplastic"}
+    },
+
+    {
+      "id": 23,
+      "sku": "D3D-SPRT-001",
+      "title": "Ganesha Bust — Classic Edition",
+      "handle": "ganesha-bust-classic-edition",
+      "collection": "spiritual-decor",
+      "type": "Spiritual Decor",
+      "price": 299900,
+      "compare_at_price": 349900,
+      "material": "SLA Resin",
+      "weight_grams": 700,
+      "lead_time_days": "5–7",
+      "tags": ["spiritual", "ganesha", "bust", "resin", "sla", "pooja", "gift", "diwali"],
+      "options": [
+        {"name": "Finish", "values": ["Ivory White", "Antique Bronze", "Antique Gold"]}
+      ],
+      "metafields": {"print_time": "14–18 hours (SLA)", "material_detail": "SLA Resin — high-detail finish", "minimum_order": 1}
+    },
+
+    {
+      "id": 24,
+      "sku": "D3D-SPRT-002",
+      "title": "Sacred Diya Holder Set (Set of 5)",
+      "handle": "sacred-diya-holder-set",
+      "collection": "spiritual-decor",
+      "type": "Diya Holder",
+      "price": 119900,
+      "compare_at_price": 149900,
+      "material": "PLA+",
+      "weight_grams": 400,
+      "tags": ["spiritual", "diya", "holder", "set", "pla-plus", "diwali", "pooja", "gift"],
+      "options": [
+        {"name": "Colour", "values": ["Natural White", "Matte Black", "Terracotta", "Antique Gold"]}
+      ],
+      "metafields": {"print_time": "8–10 hours", "material_detail": "PLA+ bioplastic"}
+    },
+
+    {
+      "id": 25,
+      "sku": "D3D-SPRT-003",
+      "title": "Mandala Wall Clock",
+      "handle": "mandala-wall-clock",
+      "collection": "spiritual-decor",
+      "type": "Clock",
+      "price": 149900,
+      "compare_at_price": 179900,
+      "material": "PLA+",
+      "weight_grams": 500,
+      "tags": ["spiritual", "mandala", "clock", "wall", "pla-plus", "living-room", "gift"],
+      "options": [
+        {"name": "Colour", "values": ["Natural White", "Matte Black", "Antique Gold"]}
+      ],
+      "metafields": {"print_time": "10–14 hours", "material_detail": "PLA+ bioplastic — AA battery clock movement included"}
+    },
+
+    {
+      "id": 26,
+      "sku": "D3D-SPRT-004",
+      "title": "Sacred Geometry Tea Light Set (×3)",
+      "handle": "sacred-geometry-tea-light-set",
+      "collection": "spiritual-decor",
+      "type": "Tea Light Holder",
+      "price": 89900,
+      "compare_at_price": 109900,
+      "material": "PLA+",
+      "weight_grams": 250,
+      "tags": ["spiritual", "tea-light", "sacred-geometry", "set", "pla-plus", "diwali", "gift"],
+      "options": [
+        {"name": "Colour", "values": ["Natural White", "Matte Black", "Terracotta", "Antique Gold"]}
+      ],
+      "metafields": {"print_time": "5–7 hours", "material_detail": "PLA+ bioplastic"}
+    },
+
+    {
+      "id": 27,
+      "sku": "D3D-CORP-001",
+      "title": "Corporate Nameplate — Custom",
+      "handle": "corporate-nameplate-custom",
+      "collection": "corporate-gifting",
+      "type": "Corporate Gift",
+      "price": 59900,
+      "compare_at_price": 79900,
+      "material": "PLA+",
+      "weight_grams": 200,
+      "inventory": 9999,
+      "tags": ["corporate", "nameplate", "custom", "personalised", "pla-plus", "office", "gifting"],
+      "options": [
+        {"name": "Colour", "values": ["Matte Black", "Natural White", "Antique Gold"]},
+        {"name": "Quantity", "values": ["1 unit", "10 units", "25 units", "50 units", "100 units"]}
+      ],
+      "metafields": {"print_time": "2–3 hours per unit", "material_detail": "PLA+ bioplastic", "minimum_order": 1},
+      "custom_field": "Name / Designation (required at checkout)"
+    },
+
+    {
+      "id": 28,
+      "sku": "D3D-CORP-002",
+      "title": "Corporate Premium Gifting Pack (Min 25)",
+      "handle": "corporate-premium-gifting-pack",
+      "collection": "corporate-gifting",
+      "type": "Corporate Gift Pack",
+      "price": 149900,
+      "compare_at_price": 189900,
+      "material": "PLA+",
+      "weight_grams": 800,
+      "inventory": 9999,
+      "tags": ["corporate", "gifting-pack", "premium", "bulk", "pla-plus", "diwali", "branded"],
+      "options": [
+        {"name": "Quantity", "values": ["25 units", "50 units", "100 units", "Custom"]}
+      ],
+      "metafields": {"print_time": "Contact for bulk timeline", "material_detail": "PLA+ bioplastic", "minimum_order": 25}
+    },
+
+    {
+      "id": 29,
+      "sku": "D3D-KEY-004",
+      "title": "Corporate Logo Keychain (Bulk)",
+      "handle": "corporate-logo-keychain-bulk",
+      "collection": "corporate-gifting",
+      "type": "Corporate Gift",
+      "price": 14900,
+      "compare_at_price": 24900,
+      "material": "PETG",
+      "weight_grams": 30,
+      "inventory": 9999,
+      "tags": ["corporate", "keychain", "logo", "bulk", "petg", "branded", "gifting"],
+      "options": [
+        {"name": "Colour", "values": ["Matte Black", "Natural White", "Antique Gold"]},
+        {"name": "Quantity", "values": ["50 units", "100 units", "250 units", "500 units"]}
+      ],
+      "metafields": {"print_time": "Contact for bulk timeline", "material_detail": "PETG — durable & lightweight", "minimum_order": 50}
+    },
+
+    {
+      "id": 30,
+      "sku": "D3D-KEY-001",
+      "title": "Custom City Series Keychain — Delhi",
+      "handle": "custom-city-series-keychain",
+      "collection": "keychains-accessories",
+      "type": "Keychain",
+      "price": 29900,
+      "compare_at_price": 39900,
+      "material": "PETG",
+      "weight_grams": 25,
+      "tags": ["keychain", "city", "delhi", "petg", "gift", "travel", "souvenir"],
+      "options": [
+        {"name": "City", "values": ["Delhi", "Mumbai", "Bangalore", "Jaipur", "Kolkata", "Hyderabad", "Chennai"]},
+        {"name": "Colour", "values": ["Matte Black", "Natural White", "Antique Gold"]}
+      ],
+      "metafields": {"print_time": "1–2 hours", "material_detail": "PETG — lightweight & durable"}
+    },
+
+    {
+      "id": 31,
+      "sku": "D3D-KEY-002",
+      "title": "Personalised Name Keychain",
+      "handle": "personalised-name-keychain",
+      "collection": "keychains-accessories",
+      "type": "Keychain",
+      "price": 24900,
+      "compare_at_price": 34900,
+      "material": "PETG",
+      "weight_grams": 20,
+      "tags": ["keychain", "personalised", "name", "petg", "gift", "custom"],
+      "options": [
+        {"name": "Colour", "values": ["Matte Black", "Natural White", "Antique Gold", "Coral Red"]}
+      ],
+      "custom_field": "Name (max 12 characters, required at checkout)",
+      "metafields": {"print_time": "2–3 days (custom)", "material_detail": "PETG — lightweight & durable", "minimum_order": 1}
+    },
+
+    {
+      "id": 32,
+      "sku": "D3D-KEY-003",
+      "title": "Geometric Bag Charm Set (×3)",
+      "handle": "geometric-bag-charm-set",
+      "collection": "keychains-accessories",
+      "type": "Bag Charm",
+      "price": 39900,
+      "compare_at_price": 49900,
+      "material": "PETG",
+      "weight_grams": 60,
+      "tags": ["keychain", "bag-charm", "geometric", "set", "petg", "gift", "accessories"],
+      "options": [
+        {"name": "Colour", "values": ["Matte Black", "Natural White", "Antique Gold", "Coral Red"]}
+      ],
+      "metafields": {"print_time": "3–5 hours", "material_detail": "PETG — lightweight & durable"}
+    },
+
+    {
+      "id": 33,
+      "sku": "D3D-WRK-001",
+      "title": "Intro to 3D Printing Workshop — 1 Seat",
+      "handle": "intro-3d-printing-workshop",
+      "collection": "workshops",
+      "type": "Experience",
+      "price": 49900,
+      "compare_at_price": null,
+      "material": null,
+      "weight_grams": 0,
+      "requires_shipping": false,
+      "inventory_tracking": false,
+      "tags": ["workshop", "experience", "beginners", "saturday", "sunday", "kids-friendly"],
+      "options": [
+        {"name": "Date", "values": ["Select via calendar — BookThatApp"]}
+      ],
+      "metafields": {"duration": "2 hours", "capacity": "8 seats max", "location": "Decora3D Studio, Delhi NCR"}
+    },
+
+    {
+      "id": 34,
+      "sku": "D3D-WRK-002",
+      "title": "Custom Creation Workshop — 1 Seat",
+      "handle": "custom-creation-workshop",
+      "collection": "workshops",
+      "type": "Experience",
+      "price": 99900,
+      "compare_at_price": null,
+      "requires_shipping": false,
+      "inventory_tracking": false,
+      "tags": ["workshop", "experience", "custom", "design", "all-levels"],
+      "options": [
+        {"name": "Date", "values": ["Select via calendar — BookThatApp"]}
+      ],
+      "metafields": {"duration": "4 hours", "capacity": "6 seats max", "location": "Decora3D Studio, Delhi NCR"}
+    },
+
+    {
+      "id": 35,
+      "sku": "D3D-WRK-003",
+      "title": "Kids 3D Printing Workshop — 1 Child",
+      "handle": "kids-3d-printing-workshop",
+      "collection": "workshops",
+      "type": "Experience",
+      "price": 44900,
+      "compare_at_price": null,
+      "requires_shipping": false,
+      "inventory_tracking": false,
+      "tags": ["workshop", "experience", "kids", "children", "ages-7-14", "school"],
+      "options": [
+        {"name": "Date", "values": ["Select via calendar — BookThatApp"]}
+      ],
+      "metafields": {"duration": "2 hours", "capacity": "10 seats max", "location": "Decora3D Studio, Delhi NCR"}
+    },
+
+    {
+      "id": 36,
+      "sku": "D3D-WRK-004",
+      "title": "Corporate Team Experience — Per Person",
+      "handle": "corporate-team-experience",
+      "collection": "workshops",
+      "type": "Experience",
+      "price": 99900,
+      "compare_at_price": null,
+      "requires_shipping": false,
+      "inventory_tracking": false,
+      "tags": ["workshop", "experience", "corporate", "team-building", "groups"],
+      "options": [
+        {"name": "Date", "values": ["Select via calendar — BookThatApp"]}
+      ],
+      "metafields": {"duration": "Half day (4 hours)", "capacity": "Min 10 people", "location": "Decora3D Studio, Delhi NCR"}
+    }
+
+  ],
+
+  "collections": [
+    {"handle": "lamps-lighting",       "title": "Lamps & Lighting",          "seo_title": "3D Printed Lamps & Lighting | Decora3D Delhi", "product_count": 7},
+    {"handle": "wall-art",             "title": "Wall Art & Panels",          "seo_title": "3D Printed Wall Art & Panels | Decora3D Delhi", "product_count": 6},
+    {"handle": "planters-vases",       "title": "Planters & Vases",           "seo_title": "3D Printed Planters & Vases | Decora3D Delhi", "product_count": 5},
+    {"handle": "organizers",           "title": "Desk & Home Organizers",     "seo_title": "3D Printed Desk & Home Organizers | Decora3D Delhi", "product_count": 4},
+    {"handle": "spiritual-decor",      "title": "Spiritual & Temple Decor",   "seo_title": "3D Printed Spiritual & Temple Decor | Decora3D Delhi", "product_count": 4},
+    {"handle": "corporate-gifting",    "title": "Corporate Gifting",          "seo_title": "Corporate 3D Printed Gifts Bulk Orders | Decora3D Delhi", "product_count": 3},
+    {"handle": "keychains-accessories","title": "Keychains & Accessories",    "seo_title": "3D Printed Keychains & Accessories | Decora3D Delhi", "product_count": 3},
+    {"handle": "workshops",            "title": "Workshop Experiences",       "seo_title": "3D Printing Workshops Delhi NCR | Decora3D", "product_count": 4}
+  ]
+}
