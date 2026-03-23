@@ -1,0 +1,57 @@
+name: Deploy to Shopify — Staging
+
+on:
+  push:
+    branches:
+      - staging        # push to staging → preview theme
+  pull_request:
+    branches:
+      - main           # every PR to main gets a preview theme
+
+jobs:
+  deploy-preview:
+    name: 🧪 Deploy Preview Theme
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Shopify CLI
+        run: npm install -g @shopify/cli@latest @shopify/theme@latest
+
+      - name: Deploy preview theme
+        id: deploy
+        env:
+          SHOPIFY_CLI_THEME_TOKEN: ${{ secrets.SHOPIFY_CLI_THEME_TOKEN }}
+          SHOPIFY_STORE: ${{ secrets.SHOPIFY_STORE }}
+        run: |
+          OUTPUT=$(shopify theme push \
+            --store=$SHOPIFY_STORE \
+            --unpublished \
+            --theme="PR Preview - ${{ github.head_ref || github.ref_name }}" \
+            --no-color 2>&1)
+          echo "$OUTPUT"
+          PREVIEW_URL=$(echo "$OUTPUT" | grep -o 'https://[^[:space:]]*preview_theme_id[^[:space:]]*' | head -1)
+          echo "preview_url=$PREVIEW_URL" >> $GITHUB_OUTPUT
+
+      - name: Comment preview URL on PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const url = '${{ steps.deploy.outputs.preview_url }}';
+            const body = url
+              ? `🎨 **Theme Preview Ready**\n\n→ [Preview on Shopify](${url})\n\n_Deployed from branch \`${{ github.head_ref }}\`_`
+              : '🎨 Theme deployed as unpublished preview. Check Shopify Admin → Themes.';
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body
+            });

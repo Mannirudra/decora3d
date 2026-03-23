@@ -1,0 +1,8 @@
+[environments.production]
+store = "decora3d.myshopify.com"
+# theme_id is set automatically by Shopify CLI after first push
+# Run: shopify theme push --store=decora3d.myshopify.com
+
+[environments.staging]
+store = "decora3d.myshopify.com"
+# theme_id for development/preview theme

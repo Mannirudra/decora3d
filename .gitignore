@@ -1,0 +1,22 @@
+# Shopify Theme
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+.shopifyignore
+
+# Shopify CLI
+.shopify/
+shopify.theme.toml.local
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Desktop.ini
+ehthumbs.db

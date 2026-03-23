@@ -1,0 +1,34 @@
+name: Deploy to Shopify — Production
+
+on:
+  push:
+    branches:
+      - main   # push to main → auto deploy to live store
+
+jobs:
+  deploy:
+    name: 🚀 Deploy Theme to Shopify
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Shopify CLI
+        run: npm install -g @shopify/cli@latest @shopify/theme@latest
+
+      - name: Deploy theme to Shopify
+        env:
+          SHOPIFY_CLI_THEME_TOKEN: ${{ secrets.SHOPIFY_CLI_THEME_TOKEN }}
+          SHOPIFY_STORE: ${{ secrets.SHOPIFY_STORE }}
+        run: |
+          shopify theme push \
+            --store=$SHOPIFY_STORE \
+            --theme=${{ secrets.SHOPIFY_PRODUCTION_THEME_ID }} \
+            --no-color \
+            --allow-live

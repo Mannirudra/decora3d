@@ -1,0 +1,27 @@
+name: Shopify Theme Check
+
+on:
+  push:
+    branches: [main, staging]
+  pull_request:
+    branches: [main]
+
+jobs:
+  theme-check:
+    name: 🔍 Lint Liquid Templates
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+
+      - name: Install theme-check
+        run: gem install theme-check
+
+      - name: Run theme-check
+        run: theme-check --fail-level error .
